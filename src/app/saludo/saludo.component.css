@@ -1,0 +1,34 @@
+/* Estilos para el contenedor del saludo */
+div {
+    background-color: #33FF57;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    color: #fff;
+    transition: transform 0.3s;
+    cursor: pointer;
+  }
+  
+  /* Efecto de animación al pasar el cursor */
+  div:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Estilos para el título */
+  h2 {
+    font-size: 28px;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    color: #FF5733;
+    letter-spacing: 1px;
+  }
+  
+  /* Estilos para el mensaje */
+  p {
+    font-size: 20px;
+    margin: 10px 0;
+    font-family: "Arial", sans-serif;
+    letter-spacing: 1px;
+  }
+  

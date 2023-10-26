@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url('https://images8.alphacoders.com/632/632051.png') no-repeat;
+    background-size: 100% 100%; /* Cubrir todo el contenedor */
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+
+h1 {
+    font-size: 36px;
+    color: #FF5733;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    margin: 20px 0;
+}
+
+/* Estilos para el contenedor principal */
+.container {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Estilos para los botones de navegación */
+.navigation {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.navigation button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    background-color: #33A1FF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.navigation button:hover {
+    background-color: #1B7CDC;
+}
+
+/* Estilos para el área de contenido dinámico */
+router-outlet {
+    margin-top: 20px;
+}
+

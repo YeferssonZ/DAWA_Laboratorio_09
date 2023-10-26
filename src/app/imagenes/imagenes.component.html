@@ -1,0 +1,19 @@
+<div>
+  <h2>Lista de Imágenes</h2>
+  <form [formGroup]="imagenForm" (ngSubmit)="agregarImagen()">
+    <label for="titulo">Título:</label>
+    <input type="text" id="titulo" formControlName="titulo">
+    <label for="descripcion">Descripción:</label>
+    <input type="text" id="descripcion" formControlName="descripcion">
+    <input type="file" (change)="onFileChange($event)" accept="image/*">
+    <button type="submit">Agregar Imagen</button>
+  </form>
+  <ul>
+    <li *ngFor="let imagen of imagenes">
+      <img [src]="imagen.url" alt="Imagen">
+      <h3>{{imagen.titulo}}</h3>
+      <p>{{imagen.descripcion}}</p>
+    </li>
+  </ul>
+  <button type="button" (click)="limpiarDatos()">Limpiar Datos</button>
+</div>
